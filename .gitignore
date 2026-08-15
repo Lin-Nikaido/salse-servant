@@ -1,2 +1,5 @@
 /.keys/
-/agents/chat_app/.env
+/agents/sales_servant/.env
+
+**/.adk/
+/agents.sales_servant/
