@@ -7,15 +7,15 @@
 # For internal use only.
 # developer team.
 
-"""
-root agent
-"""
-from google.adk.agents import Agent
-
-from .prompts import instruction
-
-root_agent = Agent(
-    name="chat_agent",
-    model="gemini-2.5-flash-native-audio-preview-12-2025",
-    instruction=instruction,
-)
+#
+# from pydantic import BaseModel
+# from pydantic import ConfigDict
+# from pydantic import alias_generators
+#
+#
+# class BaseType(BaseModel):
+#     model_config = ConfigDict(
+#         alias_generator=alias_generators.to_camel,
+#         populate_by_name=True,
+#         extra="allow",
+#     )
