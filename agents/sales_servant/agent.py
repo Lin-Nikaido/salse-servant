@@ -7,12 +7,12 @@
 # For internal use only.
 # developer team.
 
-"""
-root agent
-"""
+"""root agent"""
+
 from google.adk.agents import Agent
 
 from .prompts import instruction
+
 
 root_agent = Agent(
     name="chat_agent",

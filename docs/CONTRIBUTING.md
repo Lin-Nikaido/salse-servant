@@ -74,8 +74,8 @@ If you not have developer permission for this project. [Let us know](https://tea
 8. Format the code
     ```commandline
     uv run pre-commit run --all-files
-    uv run ruff check --fix src/ tests/
-    uv run ruff format src/ tests/
+    uv run ruff check --fix
+    uv run ruff format
     npx archgate check
     ```
 9. Push your branch.

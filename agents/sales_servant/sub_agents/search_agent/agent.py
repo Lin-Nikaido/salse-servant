@@ -7,12 +7,11 @@
 # For internal use only.
 # developer team.
 
-"""
-search agent
-"""
+"""search agent"""
 
 from google.adk.agents import Agent
 from google.adk.tools import google_search
+
 
 search_agent = Agent(
     name="search_agent",

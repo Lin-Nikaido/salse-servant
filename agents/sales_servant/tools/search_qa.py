@@ -7,26 +7,26 @@
 # For internal use only.
 # developer team.
 
-"""
-QA search tool
-"""
-
-
-from typing import List
+"""QA search tool"""
 
 from pydantic import BaseModel
 from pydantic import Field
 
 
 class QaAnswer(BaseModel):
+    """QA Answer record"""
+
     question: str = Field(..., description="Question")
     answer: str = Field(..., description="Answer")
 
-class QaAnswers(BaseModel):
-    qas: List[QaAnswer]
+
+class SearchQnaResponse(BaseModel):
+    """QA Answer records list. As"""
+
+    qas: list[QaAnswer]
 
 
-def search_q_and_a(query: str) -> QaAnswers:
+def search_qna(query: str) -> SearchQnaResponse:
     """Search QA and Answers.
     You should use this tool when, the Customer
 
